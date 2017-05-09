@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Mybreakouts Table" max_length="40" name="x_snc_mybreakouts_table" type="collection">
+        <element label="first name" max_length="200" name="first_name" type="string"/>
+        <element label="last name" max_length="200" name="last_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Session" max_length="200" name="session" type="choice">
+            <choice>
+                <element label="Session 1" value="s1"/>
+                <element label="Session 2" value="s2"/>
+            </choice>
+        </element>
+    </element>
+</database>
